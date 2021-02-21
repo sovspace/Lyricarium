@@ -1,0 +1,3 @@
+# Lyricarium
+
+Song lyrics database
