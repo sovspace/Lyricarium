@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Lyricarium</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <h1>Add song</h1>
+    <h2>Main info</h2>
+    <hr>
+
+    <form>
+      <label for="artist">Artist</label>
+      <br>
+      <input type="text" id="artist" placeholder="Primary author">
+      
+      <br>
+
+      <label for="title">Title</label>
+      <br>
+      <input type="text" id="title" placeholder="Title">
+
+      <div>
+        <input type="checkbox" id="rap" name="rap">
+        <label for="rap">Rap</label>
+
+        <input type="checkbox" id="rock" name="rock">
+        <label for="rock">Rock</label>
+
+        <input type="checkbox" id="electronic" name="electronic">
+        <label for="electronic">Electronic</label>
+
+        <input type="checkbox" id="non-music" name="non-music">
+        <label for="non-music">Non music</label>
+      </div> 
+
+      <label for="lyrics">Lyrics</label>
+      <br>
+      <textarea id="lyrics" placeholder="Lyrics"></textarea>
+      
+      <h2>Additional info</h2>
+      
+      <label for="featuring">Featuring</label>
+      <br>
+      <input type="text" id="featuring" placeholder="Featuring">
+
+      <label for="produced-by">Produced by</label>
+      <br>
+      <input type="text" id="produced-by" placeholder="Produced by">
+
+      <label for="written-by">Written by</label>
+      <br>
+      <input type="text" id="written-by" placeholder="Written by">
+      
+      <h3>Release date, albums, additional tags</h3>
+
+      <label for="release-date">Release date</label>
+      <br>
+      <input type="date" id="release-date" name="release-date">
+
+      <h3>Video and audio links</h3>
+
+      <label for="youtube-link">YouTube link</label>
+      <br>
+      <input type="url" id="youtube-link" name="youtube-link">
+
+      <label for="soundcloud-link">SoundCloud link</label>
+      <br>
+      <input type="url" id="soundcloud-link" name="soundcloud-link">      
+
+      <input type="submit" value="Submit">Submit</input>
+
+    </form>
+  </body>
+</html>
