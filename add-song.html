@@ -1,78 +1,117 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
 
-    <title>Lyricarium</title>
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
+        <title>Add song</title>
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="icon" type="image/svg" href="img/favicon.svg" />
+    </head>
 
-  <body>
-    <h1>Add song</h1>
-    <h2>Main info</h2>
-    <hr>
+    <body>
+        <header>
+            <input type="search" />
 
-    <form>
-      <label for="artist">Artist</label>
-      <br>
-      <input type="text" id="artist" placeholder="Primary author">
-      
-      <br>
+            <h1>Lyricarium</h1>
 
-      <label for="title">Title</label>
-      <br>
-      <input type="text" id="title" placeholder="Title">
+            <nav>
+                <ul class="nav-list">
+                    <li>Feed</li>
+                    <li>Notifications</li>
+                    <li>Messages</li>
+                    <li>Account</li>
+                </ul>
+            </nav>
 
-      <div>
-        <input type="checkbox" id="rap" name="rap">
-        <label for="rap">Rap</label>
+            <nav>
+                <ul class="list nav-list">
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#charts">Charts</a></li>
+                    <li><a href="#community">Community</a></li>
+                    <li><a href="add-song.html">Add song</a></li>
 
-        <input type="checkbox" id="rock" name="rock">
-        <label for="rock">Rock</label>
+                    <li><a href="twitter.com">Twitter</a></li>
+                    <li><a href="instagram.com">Instagram</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        <input type="checkbox" id="electronic" name="electronic">
-        <label for="electronic">Electronic</label>
+        <main>
+            <h1>Add song</h1>
+            <h2>Main info</h2>
+            <hr />
 
-        <input type="checkbox" id="non-music" name="non-music">
-        <label for="non-music">Non music</label>
-      </div> 
+            <form>
+                <label for="artist">Artist</label>
+                <br />
+                <input type="text" id="artist" placeholder="Primary author" />
+                <br />
 
-      <label for="lyrics">Lyrics</label>
-      <br>
-      <textarea id="lyrics" placeholder="Lyrics"></textarea>
-      
-      <h2>Additional info</h2>
-      
-      <label for="featuring">Featuring</label>
-      <br>
-      <input type="text" id="featuring" placeholder="Featuring">
+                <label for="title">Title</label>
+                <br />
+                <input type="text" id="title" placeholder="Title" />
 
-      <label for="produced-by">Produced by</label>
-      <br>
-      <input type="text" id="produced-by" placeholder="Produced by">
+                <div>
+                    <input type="checkbox" id="rap" name="rap" />
+                    <label for="rap">Rap</label>
 
-      <label for="written-by">Written by</label>
-      <br>
-      <input type="text" id="written-by" placeholder="Written by">
-      
-      <h3>Release date, albums, additional tags</h3>
+                    <input type="checkbox" id="rock" name="rock" />
+                    <label for="rock">Rock</label>
 
-      <label for="release-date">Release date</label>
-      <br>
-      <input type="date" id="release-date" name="release-date">
+                    <input type="checkbox" id="electronic" name="electronic" />
+                    <label for="electronic">Electronic</label>
 
-      <h3>Video and audio links</h3>
+                    <input type="checkbox" id="non-music" name="non-music" />
+                    <label for="non-music">Non music</label>
+                </div>
 
-      <label for="youtube-link">YouTube link</label>
-      <br>
-      <input type="url" id="youtube-link" name="youtube-link">
+                <label for="lyrics">Lyrics</label>
+                <br />
+                <textarea id="lyrics" placeholder="Lyrics"></textarea>
 
-      <label for="soundcloud-link">SoundCloud link</label>
-      <br>
-      <input type="url" id="soundcloud-link" name="soundcloud-link">      
+                <h2>Additional info</h2>
 
-      <input type="submit" value="Submit">Submit</input>
+                <label for="featuring">Featuring</label>
+                <br />
+                <input type="text" id="featuring" placeholder="Featuring" />
 
-    </form>
-  </body>
+                <br />
+                <label for="produced-by">Produced by</label>
+                <br />
+                <input type="text" id="produced-by" placeholder="Produced by" />
+
+                <br />
+                <label for="written-by">Written by</label>
+                <br />
+                <input type="text" id="written-by" placeholder="Written by" />
+
+                <h3>Release date, albums, additional tags</h3>
+
+                <label for="release-date">Release date</label>
+                <br />
+                <input type="date" id="release-date" name="release-date" />
+
+                <h3>Video and audio links</h3>
+
+                <label for="youtube-link">YouTube link</label>
+                <br />
+                <input type="url" id="youtube-link" name="youtube-link" />
+                <br />
+
+                <label for="soundcloud-link">SoundCloud link</label>
+                <br />
+                <input type="url" id="soundcloud-link" name="soundcloud-link" />
+                <br />
+
+                <input type="submit" value="Submit" />
+            </form>
+        </main>
+        
+        <footer>
+            <h1>
+                Lyricarium is song and lyrics database maintained by community
+                of contributors
+            </h1>
+        </footer>
+    </body>
 </html>
