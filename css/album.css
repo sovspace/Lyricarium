@@ -1,0 +1,96 @@
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.hero-title-caption-album-label {
+    font-family: "Montserrat", monospace;
+    font-size: 1em;
+    color: #FFFF64;    
+}
+
+.hero-title-caption-album {
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 1.8em;
+    color: white; 
+}
+
+.hero-title-caption-artist {
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 1.8em;
+    color: white; 
+}
+
+.hero-title-caption-released-data {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+    color: gray; 
+}
+
+.section {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 100%;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.section-title {
+    font-family: "Montserrat", monospace;
+    font-weight: bold;
+    font-size: 4em;
+    letter-spacing: 5px;
+    color: black;
+}
+
+.container img {
+    width: 3vw;
+}
+
+
+.tracklist {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    align-items: center;
+}
+
+.tracklist-song:hover {
+    background: rgb(236, 236, 236);
+}
+
+.tracklist-number {
+    font-family: "Montserrat", serif;
+    font-weight: 800;
+    font-size: 2vw;
+    color: rgba(24, 24, 24, 0.753);
+    margin-left: 1vw;
+}
+
+.tracklist-song {
+    display: grid;
+    grid-template-columns: 4vw 7vw 10vw auto auto;
+    align-items: center;
+    padding: 1.5vh;
+    border-bottom: rgba(211, 211, 211, 0.753) solid 2px;
+}
+
+.tracklist-song-name {
+    font-family: "Montserrat", monospace;
+    font-weight: 800;
+    font-size: 1.5vw;
+}
+
+.tracklist-song-artist {
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+    font-size: 1vw;
+}
+
+.tracklist-song-views {
+    font-family: "Montserrat", serif;
+    font-weight: 200;
+    font-size: 0.6vw;
+    margin-left: auto;
+}

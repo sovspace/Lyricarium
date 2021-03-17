@@ -4,129 +4,219 @@
         <meta charset="utf-8" />
 
         <title>Add song</title>
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Montserrat"
+        />
         <link rel="stylesheet" href="css/main.css" />
-        <link rel="icon" type="image/svg" href="img/favicon.svg" />
+        <link rel="stylesheet" href="css/add-song.css" />
+        <link rel="stylesheet" href="css/form.css">
+        <link rel="icon" type="image/svg" href="icons/favicon.svg" />
     </head>
 
     <body>
         <header>
-            <input type="search" placeholder="Find song, album, artist..." />
+            <nav class="nav">
+                <input
+                    class="search-input"
+                    type="search"
+                    placeholder="Find song, album, artist..."
+                />
+                <a href="index.html"> 
+                    <h1 class="logo">Lyricarium</h1>
+                </a>
 
-            <h1>Lyricarium</h1>
-
-            <nav>
-                <ul class="nav-list">
+                <ul>
                     <li>
-                        <button>Feed</button>
+                        <button class="icon-button">
+                            <img
+                                class="icon-button-image"
+                                src="icons/feed.svg"
+                                alt="Feed button"
+                            />
+                            <span class="icon-button-text disibility-text">Feed</span>
+                        </button>
                     </li>
 
                     <li>
-                        <button>Messages</button>
+                        <button class="icon-button">
+                            <img
+                                class="icon-button-image"
+                                src="icons/message.svg"
+                                alt="Message button"
+                            />
+                            <span class="icon-button-text disibility-text"
+                                >Message</span
+                            >
+                        </button>
                     </li>
 
                     <li>
-                        <button>Account</button>
+                        <button class="icon-button">
+                            <img
+                                class="icon-button-image"
+                                src="img/avatar-example.png"
+                                alt="User button"
+                            />
+                            <span class="icon-button-text disibility-text"
+                                >Account</span
+                            >
+                        </button>
                     </li>
                 </ul>
             </nav>
 
-            <nav>
-                <ul class="list nav-list">
-                    <li><a href="index.html#charts">Charts</a></li>
-                    <li><a href="index.html#community">Community</a></li>
-                    <li><a href="add-song.html">Add song</a></li>
-
-                    <li><a href="https://twitter.com">Twitter</a></li>
-                    <li><a href="https://www.instagram.com">Instagram</a></li>
-                </ul>
+            <nav class="subnav">
+                <a href="index.html#charts">Charts</a>
+                <a href="index.html#community">Community</a>
+                <a href="add-song.html">Add song</a>
+                <a href="https://twitter.com">Twitter</a>
+                <a href="https://www.instagram.com">Instagram</a>
             </nav>
         </header>
 
-        <main>
-            <h1>Add song</h1>
-            <h2>Main info</h2>
-            <hr />
-
+        <main class="container">
             <form>
-                <label for="artist">Artist</label>
-                <br />
-                <input type="search" id="artist" placeholder="Search artist" />
-                <br />
+                <div class="form-grid">
+                    <h1 class="form-title form-grid-title">Add song</h1>
+                    <h2 class="form-subtitle form-grid-main-subtitle">Main info</h2>
 
-                <a href="add-artist.html"> Add artist </a>
-                <br />
+                    <section class="form-grid-main-info">
+                        <label class="form-small-label" for="artist">Artist</label>
+                        <input
+                            class="form-input-text"
+                            type="search"
+                            id="artist"
+                            placeholder="Search artist"
+                        />
+                        <a href="add-artist.html"> Add artist </a>
 
-                <label for="title">Title</label>
-                <br />
+                        <label class="form-small-label" for="title">Title</label>
+                        <input
+                            class="form-input-text"
+                            type="text"
+                            id="title"
+                            placeholder="Title"
+                        />
 
-                <input type="text" id="title" placeholder="Title" />
-                <div>
-                    <input type="checkbox" id="rap" name="rap" />
-                    <label for="rap">Rap</label>
+                        <div>
+                            <input type="checkbox" id="rap" name="rap" />
+                            <label class="form-checkbox-label" for="rap">Rap</label>
 
-                    <input type="checkbox" id="rock" name="rock" />
-                    <label for="rock">Rock</label>
+                            <input type="checkbox" id="rock" name="rock" />
+                            <label class="form-checkbox-label" for="rock">Rock</label>
 
-                    <input type="checkbox" id="electronic" name="electronic" />
-                    <label for="electronic">Electronic</label>
+                            <input
+                                type="checkbox"
+                                id="electronic"
+                                name="electronic"
+                            />
+                            <label class="form-checkbox-label" for="electronic"
+                                >Electronic</label
+                            >
 
-                    <input type="checkbox" id="non-music" name="non-music" />
-                    <label for="non-music">Non music</label>
+                            <input
+                                type="checkbox"
+                                id="non-music"
+                                name="non-music"
+                            />
+                            <label class="form-checkbox-label" for="non-music"
+                                >Non music</label
+                            >
+                        </div>
+                    </section>
+
+                    <section class="form-grid-lyrics">
+                        <label class="form-small-label" for="lyrics">Lyrics</label>
+                        <textarea
+                            class="form-input-textarea"
+                            id="lyrics"
+                            placeholder="Lyrics"
+                        ></textarea>
+                    </section>
+
+                    <h2 class="form-subtitle form-grid-additional-subtitle">Additional info</h2>
+
+                    <section class="form-grid-author-additional-info">
+                        <label class="form-small-label" for="featuring">Featuring</label>
+                        <input
+                            class="form-input-text"
+                            type="text"
+                            id="featuring"
+                            placeholder="Featuring"
+                        />
+
+                        <label class="form-small-label" for="produced-by"
+                            >Produced by</label
+                        >
+                        <input
+                            class="form-input-text"
+                            type="text"
+                            id="produced-by"
+                            placeholder="Produced by"
+                        />
+
+                        <label class="form-small-label" for="written-by"
+                            >Written by</label
+                        >
+                        <input
+                            class="form-input-text"
+                            type="text"
+                            id="written-by"
+                            placeholder="Written by"
+                        />
+
+                        <h3 class="form-subsubtitle">Video and audio links</h3>
+
+                        <label class="form-small-label" for="youtube-link"
+                            >YouTube link</label
+                        >
+                        <input
+                            class="form-input-text"
+                            type="url"
+                            id="youtube-link"
+                            name="youtube-link"
+                        />
+
+                        <label class="form-small-label" for="soundcloud-link"
+                            >SoundCloud link</label
+                        >
+                        <input
+                            class="form-input-text"
+                            type="url"
+                            id="soundcloud-link"
+                            name="soundcloud-link"
+                        />
+                    </section>
+
+                    <section class="form-grid-album-additional-info">
+                        <h3 class="form-subsubtitle">
+                            Release date, albums, additional tags
+                        </h3>
+
+                        <label class="form-small-label" for="release-date"
+                            >Release date</label
+                        >
+                        <input
+                            class="form-input-text"
+                            type="date"
+                            id="release-date"
+                            name="release-date"
+                        />
+
+                        <label class="form-small-label" for="album">Album</label>
+                        <input
+                            class="form-input-text"
+                            type="search"
+                            id="album"
+                            name="album"
+                            placeholder="Search album"
+                        />
+
+                        <a href="add-album.html"> Add album </a>
+                    </section>
                 </div>
-
-                <label for="lyrics">Lyrics</label>
-                <br />
-                <textarea id="lyrics" placeholder="Lyrics"></textarea>
-
-                <h2>Additional info</h2>
-                <hr />
-
-                <label for="featuring">Featuring</label>
-                <br />
-                <input type="text" id="featuring" placeholder="Featuring" />
-
-                <br />
-                <label for="produced-by">Produced by</label>
-                <br />
-                <input type="text" id="produced-by" placeholder="Produced by" />
-
-                <br />
-                <label for="written-by">Written by</label>
-                <br />
-                <input type="text" id="written-by" placeholder="Written by" />
-
-                <h3>Release date, albums, additional tags</h3>
-
-                <label for="release-date">Release date</label>
-                <br />
-                <input type="date" id="release-date" name="release-date" />
-                <br />
-
-                <label for="album">Album</label>
-                <br />
-                <input
-                    type="search"
-                    id="album"
-                    name="album"
-                    placeholder="Search album"
-                />
-
-                <br />
-                <a href="add-album.html"> Add album </a>
-
-                <h3>Video and audio links</h3>
-
-                <label for="youtube-link">YouTube link</label>
-                <br />
-                <input type="url" id="youtube-link" name="youtube-link" />
-                <br />
-
-                <label for="soundcloud-link">SoundCloud link</label>
-                <br />
-                <input type="url" id="soundcloud-link" name="soundcloud-link" />
-                <br />
-
-                <input type="submit" value="Submit" />
+                <input class="form-submit-button form-grid-button" type="submit" value="Submit" />
             </form>
         </main>
 

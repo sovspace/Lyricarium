@@ -4,66 +4,92 @@
         <meta charset="utf-8" />
 
         <title>Add album</title>
+        <link rel="icon" type="image/svg" href="icons/favicon.svg" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Montserrat"
+        />
         <link rel="stylesheet" href="css/main.css" />
-        <link rel="icon" type="image/svg" href="img/favicon.svg" />
+        <link rel="stylesheet" href="css/add-album.css" />
+        <link rel="stylesheet" href="css/form.css" />
     </head>
 
     <body>
         <header>
-            <input type="search" placeholder="Find song, album, artist..." />
-
-            <h1>Lyricarium</h1>
-
-            <nav>
-                <ul class="nav-list">
+            <nav class="nav">
+                <input
+                    class="search-input"
+                    type="search"
+                    placeholder="Find song, album, artist..."
+                />
+                <a href="index.html"> 
+                    <h1 class="logo">Lyricarium</h1>
+                </a>
+                <ul>
                     <li>
-                        <button>Feed</button>
+                        <button class="icon-button">
+                            <img
+                                class="icon-button-image"
+                                src="icons/feed.svg"
+                                alt="Feed button"
+                            />
+                            <span class="icon-button-text disibility-text">Feed</span>
+                        </button>
                     </li>
 
                     <li>
-                        <button>Messages</button>
+                        <button class="icon-button">
+                            <img
+                                class="icon-button-image"
+                                src="icons/message.svg"
+                                alt="Message button"
+                            />
+                            <span class="icon-button-text disibility-text"
+                                >Message</span
+                            >
+                        </button>
                     </li>
 
                     <li>
-                        <button>Account</button>
+                        <button class="icon-button">
+                            <img
+                                class="icon-button-image"
+                                src="img/avatar-example.png"
+                                alt="User button"
+                            />
+                            <span class="icon-button-text disibility-text"
+                                >Account</span
+                            >
+                        </button>
                     </li>
                 </ul>
             </nav>
 
-            <nav>
-                <ul class="list nav-list">
-                    <li><a href="index.html#charts">Charts</a></li>
-                    <li><a href="index.html#community">Community</a></li>
-                    <li><a href="add-song.html">Add song</a></li>
-
-                    <li><a href="https://twitter.com">Twitter</a></li>
-                    <li><a href="https://www.instagram.com">Instagram</a></li>
-                </ul>
+            <nav class="subnav">
+                <a href="index.html#charts">Charts</a>
+                <a href="index.html#community">Community</a>
+                <a href="add-song.html">Add song</a>
+                <a href="https://twitter.com">Twitter</a>
+                <a href="https://www.instagram.com">Instagram</a>
             </nav>
         </header>
 
-        <main>
-            <h1>Add album</h1>
-
+        <main class="container">            
             <form>
-                <label for="album-name">Album name</label>
-                <br />
-                <input type="text" id="album-name" placeholder="Album name" />
-                <br />
+                <h1 class="form-title">Add album</h1>
+                <label class="form-small-label" for="album-name">Album name</label>
+                <input class="form-input-text" type="text" id="album-name" placeholder="Album name" />
+                
+                <label class="form-small-label" for="artist">Artist</label>
+                <input class="form-input-text" type="search" id="artist" placeholder="Search artist" />
+                
+                <label class="form-small-label" for="release-date">Release date</label>
+                <input class="form-input-text" type="date" id="release-date" />
+            
+                <input class="form-file-upload" type="file" id="album-cover" name="album-cover">
+                <label for="album-cover" >Upload album cover image</label>
 
-                <label for="artist">Artist</label>
-                <br />
-                <input type="search" id="artist" placeholder="Search artist" />
-                <br />
-
-                <label for="release-date">Release date</label>
-                <br />
-                <input type="date" id="release-date" />
-                <br />
-
-                <button>Upload album cover image</button>
-
-                <input type="submit" value="Submit" />
+                <input class="form-submit-button" type="submit" value="Submit" />
             </form>
         </main>
         <footer>

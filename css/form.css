@@ -1,0 +1,98 @@
+
+.form-title {
+    font-family: "Montserrat", monospace;
+    font-weight: 800;
+    font-size: 2.5em;
+}
+
+.form-subtitle {
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 1vw;
+    border-bottom: rgba(211, 211, 211, 0.753) solid 2px;
+}
+
+.form-submit-button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1em;   
+    padding: 0.5em;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.form-small-label {
+    display: block;
+    font-family: "Montserrat", monospace;
+    font-weight: 300;
+    font-size: 0.8em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.form-subsubtitle {
+    margin-top: 1vh;
+    font-family: "Montserrat", serif;
+    font-weight: 300;
+    font-size: 0.8vw;
+    border-bottom: rgba(211, 211, 211, 0.753) solid 1px;
+}
+
+.form-checkbox-label {
+    font-family: "Montserrat", monospace;
+    font-weight: 300;
+    font-size: 0.8em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.form-input-text{
+    display: block;
+    width: 15vw;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-bottom: 1vh;
+    padding: 0.4em;
+    width: 40%;
+}
+
+.form-input-text:focus {
+    width: 82%;
+}
+
+.form-input-textarea {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.2em;
+    width: 40%;
+    height: 30vh;
+    padding: 0.5em;
+    border: rgba(211, 211, 211, 0.753) solid 2px;
+    resize: none;
+}
+
+.form-file-upload {
+    width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.form-file-upload + label {
+    width: 15em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1em;   
+    padding: 0.5em;
+    background-color: black;
+    color: white;
+    display: block;
+    cursor: pointer;
+    margin-bottom: 1vh;
+}
+

@@ -2,216 +2,246 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Song name</title>
-
-        <link rel="stylesheet" href="css/main.css" />
+        <title>Shortparis - Страшно</title>
+        
         <link rel="icon" type="image/svg" href="icons/favicon.svg" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Montserrat"
+        />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/hero.css" />
+        <link rel="stylesheet" href="css/song.css" />
     </head>
 
     <body>
         <header>
-            <input type="search" placeholder="Find song, album, artist..." />
-            <h1>Lyricarium</h1>
-            <nav>
-                <ul class="nav-list">
+            <nav class="nav">
+                <input
+                    class="search-input"
+                    type="search"
+                    placeholder="Find song, album, artist..."
+                />
+                <a href="index.html"> 
+                    <h1 class="logo">Lyricarium</h1>
+                </a>
+                <ul>
                     <li>
-                        <button>Feed</button>
+                        <button class="icon-button">
+                            <img
+                                class="icon-button-image"
+                                src="icons/feed.svg"
+                                alt="Feed button"
+                            />
+                            <span class="icon-button-text disibility-text">Feed</span>
+                        </button>
                     </li>
 
                     <li>
-                        <button>Messages</button>
+                        <button class="icon-button">
+                            <img
+                                class="icon-button-image"
+                                src="icons/message.svg"
+                                alt="Message button"
+                            />
+                            <span class="icon-button-text disibility-text"
+                                >Message</span
+                            >
+                        </button>
                     </li>
 
                     <li>
-                        <button>Account</button>
+                        <button class="icon-button">
+                            <img
+                                class="icon-button-image"
+                                src="img/avatar-example.png"
+                                alt="User button"
+                            />
+                            <span class="icon-button-text disibility-text"
+                                >Account</span
+                            >
+                        </button>
                     </li>
                 </ul>
             </nav>
-            <nav>
-                <ul class="list nav-list">
-                    <li><a href="index.html#charts">Charts</a></li>
-                    <li><a href="index.html#community">Community</a></li>
-                    <li><a href="add-song.html">Add song</a></li>
 
-                    <li><a href="https://twitter.com">Twitter</a></li>
-                    <li><a href="https://www.instagram.com">Instagram</a></li>
-                </ul>
+            <nav class="subnav">
+                <a href="index.html#charts">Charts</a>
+                <a href="index.html#community">Community</a>
+                <a href="add-song.html">Add song</a>
+                <a href="https://twitter.com">Twitter</a>
+                <a href="https://www.instagram.com">Instagram</a>
             </nav>
         </header>
 
-        <main>
-            <section>
-                <figure>
-                    <img src="img/album-example.jpg" alt="Album cover" />
-                    <figcaption>
-                        <h2>Страшно</h2>
-                        <h2>Shortparis</h2>
-                        <h3>Produced by: RedOne</h3>
-                        <h3>Album: Так заколялась сталь</h3>
-
-                        <img src="icons/view.svg" alt="Views count" /> <span>1.2kk</span>
-                        <img src="icons/contribution.svg" alt="Contributions count" /> <span>120</span>
+        <div class="hero">
+            <div class="hero-container"> 
+                <figure class="hero-title-container">
+                    <img class="hero-title-image" src="img/album-example.jpg" alt="Album cover" />
+                    <figcaption class="hero-title-caption">
+                        <h2 class="hero-title-caption-song">Страшно</h2>
+                        <h2 class="hero-title-caption-artist">Shortparis</h2>
+                        <h3 class="hero-title-caption-additional">Produced by: RedOne</h3>
+                        <h3 class="hero-title-caption-additional">Album: Так заколялась сталь</h3>
                     </figcaption>
                 </figure>
-            </section>
-
-            <section>
-                <h2>Lyrics</h2>
-                <button>Edit</button>
                 
-                <span>
-                    Честная, честная, честная
-                    Честная, честная, честная
-                    Тебе не справиться
-                    Но им не нравится
-                    Знают наперед
-                    Кто не дойдет
-                    А женщины красятся
-                    И дети прячутся
-                    Встать в хоровод
-                    Никто не врёт, но
-                    Тебе не нравится
-                    И им не нравится
-                    Спят сыновья
-                    Молчит семья
-                    Наивно уставился
-                    И планы правятся
-                    В ответе я
-                    С кем спит моя
-                    Тебе не справиться
-                    И им не справиться
-                    Лёд не спасет
-                    Майор идет
-                    А женщины красятся
-                    И дети прячутся
-                    Встать в хоровод
-                    Никто не врёт
-                    Потому и страшно
-                    Потому и страшно
-                    Потому и страшно
-                    Потому и страшно
-                    Потому и страшно
-                    Потому и страшно
-                    Потому и страшно
-                    Потому и страшно
-                    Вечная, вечная, вечная, вечная
-                    Наверное, верная
-                    Честная, честная, честная нация
-                    Честная, честная, честная
-                    Тебе не справиться
-                    И им не справиться
-                    Лёд не спасет
-                    Кто не…
-                </span>
-                <hr />
-            </section>
+                <div class="hero-stats-container"> 
+                    <figure class="hero-stats-icon">
+                        <img class="hero-stats-icon-image" src="icons/view.svg" alt="Views count"/> 
+                        <figcaption class="hero-stats-icon-caption">1.2kk</figcaption>
+                    </figure>
 
-            <section>
-                <h2>Share</h2>
-                <a href="song.html">Share Facebook</a>
-                <a href="song.html">Share Twitter</a>
-                <hr />
-            </section>
+                    <figure class="hero-stats-icon">
+                        <img class="hero-stats-icon-image" src="icons/contribution.svg" alt="Contributions count" /> 
+                        <figcaption class="hero-stats-icon-caption">120</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
 
+        <main class="container main-grid">
+            <div class="column"> 
+                <section class="lyrics-section">
+                    <h2 class="section-title">Lyrics</h2>
+                    <button class="button">Edit</button>
+                    
+                    <pre class="lyrics-text">
+Честная, честная, честная
+Честная, честная, честная
+Тебе не справиться
+Но им не нравится
+Знают наперед
+Кто не дойдет
+И дети прячутся
+Встать в хоровод
+Никто не врёт, но
+Тебе не нравится
+И им не нравится
+Спят сыновья
+Молчит семья
+Наивно уставился
+И планы правятся
+В ответе я
+С кем спит моя
+Тебе не справиться
+И им не справиться
+Лёд не спасет
+Майор идет
+А женщины красятся
+И дети прячутся
+Встать в хоровод
+Никто не врёт
+Потому и страшно
+Потому и страшно
+Потому и страшно
+Потому и страшно
+Потому и страшно
+Потому и страшно
+Потому и страшно
+Потому и страшно
+Вечная, вечная, вечная, вечная
+Наверное, верная
+Честная, честная, честная нация
+Честная, честная, честная
+Тебе не справиться
+И им не справиться
+Лёд не спасет
+Кто не…
+                    </pre>                
+                </section>
+                <section class="comments-section">
+                    <h2 class="section-title">Comments</h2>
+                    <div class="comment-input-container"> 
+                        <textarea class="comment-input" placeholder="Add a comment"></textarea>
+                        <button class="button">Submit</button>
+                    </div>
+    
+                    <article class="comment-container">
+                        <h3 class="comment-author">Author</h3>
+                        <span class="text">Comment</span>
+                        
+                        <div class="comment-feedback-container">
+                            <span class="like-button"></span>
+                            <span class="comment-feedback-count text">11</span>
+                            <span class="dislike-button"></span>
+                        </div>
+                    </article>
 
-            <section>
-                <h2>Comments</h2>
-                <textarea placeholder="Add a comment"></textarea>
-                <br />
-                <button>Submit</button>
+                    <article class="comment-container">
+                        <h3 class="comment-author">Author</h3>
+                        <span class="text">Comment</span>
+                        
+                        <div class="comment-feedback-container">
+                            <span class="like-button"></span>
+                            <span class="comment-feedback-count text">11</span>
+                            <span class="dislike-button"></span>
+                        </div>
+                    </article>
 
-                <article>
-                    <h3>Author</h3>
-                    <p>Comment</p>
-
-                    <button>Like</button>
-                    <p>11</p>
-                    <button>Dislike</button>
-                    <hr />
-                </article>
-
-                <article>
-                    <h3>Author</h3>
-                    <p>Comment</p>
-
-                    <button>Like</button>
-                    <p>11</p>
-                    <button>Dislike</button>
-                    <hr />
-                </article>
-
-                <article>
-                    <h3>Author</h3>
-                    <p>Comment</p>
-
-                    <button>Like</button>
-                    <p>11</p>
-                    <button>Dislike</button>
-                    <hr />
-                </article>
-            </section>
-
-            <section>
-                <h2>About</h2>
-                <p>About text</p>
-
-                <button>Like</button>
-                <p>11</p>
-                <button>Dislike</button>
-                <hr />
-            </section>
-
-            <section>
-                <h2>Translations</h2>
-                <ul>
-                    <li>Russian translation</li>
-                    <li>German translation</li>
-                </ul>
-
-                <button>Like</button>
-                <p>11</p>
-                <button>Dislike</button>
-                <hr />
-            </section>
-
-            <section>
-                <h2>Translations</h2>
-                <ul>
-                    <li>Russian translation</li>
-                    <li>German translation</li>
-                </ul>
-
-                <button>Like</button>
-                <p>11</p>
-                <button>Dislike</button>
-                <hr />
-            </section>
-
-            <section>
-                <h2>Artist quotes</h2>
-                <ul>
-                    <li>
-                        <blockquote>
-                            <p>Quote</p>
-                        </blockquote>
-                    </li>
-                </ul>
-
-                <button>Like</button>
-                <p>11</p>
-                <button>Dislike</button>
-                <hr />
-            </section>
-
-            <section>
-                <h2>Track info</h2>
-                <ul>
-                    <li><p>Written by</p></li>
-                    <li><p>Released date</p></li>
-                </ul>
-            </section>
-        </main>
-
+                    <article class="comment-container">
+                        <h3 class="comment-author">Author</h3>
+                        <span class="text">Comment</span>
+                        
+                        <div class="comment-feedback-container">
+                            <span class="like-button"></span>
+                            <span class="comment-feedback-count text">11</span>
+                            <span class="dislike-button"></span>
+                        </div>
+                    </article>
+                </section>
+            </div>
+            
+            <div class="column">
+                <section class="about-section">
+                    <h2 class="section-title">About</h2>
+                    <span class="text">About text</span>
+    
+                    <div class="comment-feedback-container">
+                        <span class="like-button"></span>
+                        <span class="comment-feedback-count text">11</span>
+                        <span class="dislike-button"></span>
+                    </div>
+                </section>
+    
+                <section class="translation-section">
+                    <h2 class="section-title">Translations</h2>
+                    <ul>
+                        <li class="text">Russian translation</li>
+                        <li class="text">German translation</li>
+                    </ul>
+    
+                    <div class="comment-feedback-container">
+                        <span class="like-button"></span>
+                        <span class="comment-feedback-count text">11</span>
+                        <span class="dislike-button"></span>
+                    </div>
+                </section>
+    
+                <section class="quotes-section">
+                    <h2 class="section-title">Artist quotes</h2>
+                    <ul>
+                        <li class="text">
+                            Quote
+                        </li>
+                    </ul>
+    
+                    <div class="comment-feedback-container">
+                        <span class="like-button"></span>
+                        <span class="comment-feedback-count text">11</span>
+                        <span class="dislike-button"></span>
+                    </div>
+                </section>
+    
+                <section>
+                    <h2 class="section-title">Track info</h2>
+                    <ul>
+                        <li class="text">Written by</li>
+                        <li class="text">Released date</li>
+                    </ul>
+                </section>
+            </main>
+            </div>
         <footer>
             <h1>
                 Lyricarium is song and lyrics database maintained by community

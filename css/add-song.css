@@ -1,0 +1,58 @@
+a {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: inherit;
+    color: rgb(0, 65, 150);
+    font-weight: 800;
+}
+
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+        "title title"
+        "main-subtitle main-subtitle"
+        "main-info no"
+        "lyrics lyrics"
+        "additional-subtitle additional-subtitle"
+        "author-additional-info album-additional-info"
+        "button button";
+}
+
+
+.form-grid-title {
+    grid-area: title;
+}
+
+.form-grid-main-subtitle {
+    grid-area: main-subtitle;
+}
+
+.form-grid-main-info {
+    margin-left: 1vw;
+    grid-area: main-info;
+}
+
+.form-grid-lyrics {
+    margin-left: 1vw;
+    grid-area: lyrics;
+}
+
+.form-grid-additional-subtitle {
+    grid-area: additional-subtitle;
+}
+
+.form-grid-author-additional-info {
+    margin-left: 1vw;
+    grid-area: author-additional-info;
+}
+
+.form-grid-album-additional-info {
+    margin-right: 1vw;
+    grid-area: album-additional-info;
+}
+
+.form-grid-button {
+    grid-area: button;
+}
+
