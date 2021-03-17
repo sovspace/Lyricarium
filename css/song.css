@@ -31,6 +31,12 @@ li {
     color: gray; 
 }
 
+.hero-title-caption-album-href {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: inherit;
+    color: rgb(0, 65, 150);
+    font-weight: 800;
+}
 
 
 
