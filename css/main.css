@@ -131,6 +131,20 @@ button {
     font-size: 1.3em;
 }
 
+.like-button {
+    display: block;
+    background-image: url("../icons/like.svg");
+    background-repeat: no-repeat;
+    height: 1em;
+    width: 1em;
+
+    cursor: pointer;
+}
+
+.like-button:hover {
+    background-image: url("../icons/like-green.svg");
+}
+
 
 .dislike-button {
     display: block;
@@ -144,18 +158,4 @@ button {
 
 .dislike-button:hover {
     background-image: url("../icons/dislike-red.svg");
-}
-
-.like-button {
-    display: block;
-    background-image: url("../icons/like.svg");
-    background-repeat: no-repeat;
-    height: 1em;
-    width: 1em;
-
-    cursor: pointer;
-}
-
-.like-button:hover {
-    background-image: url("../icons/like-green.svg");
 }
