@@ -1,0 +1,147 @@
+<main class="container">
+    <form>
+        <div class="form-grid">
+            <h1 class="form-title form-grid-title">Add song</h1>
+            <h2 class="form-subtitle form-grid-main-subtitle">Main info</h2>
+
+            <section class="form-grid-main-info">
+                <label class="form-small-label" for="artist">Artist</label>
+                <input
+                    class="form-input-text"
+                    type="search"
+                    id="artist"
+                    placeholder="Search artist"
+                />
+
+                <a class="slide-ref" data-slide-name="add-artist">Add artist</a>
+
+                <label class="form-small-label" for="title">Title</label>
+                <input
+                    class="form-input-text"
+                    type="text"
+                    id="title"
+                    placeholder="Title"
+                />
+
+                <div>
+                    <input type="checkbox" id="rap" name="rap" />
+                    <label class="form-checkbox-label" for="rap">Rap</label>
+
+                    <input type="checkbox" id="rock" name="rock" />
+                    <label class="form-checkbox-label" for="rock">Rock</label>
+
+                    <input type="checkbox" id="electronic" name="electronic" />
+                    <label class="form-checkbox-label" for="electronic"
+                        >Electronic</label
+                    >
+
+                    <input type="checkbox" id="non-music" name="non-music" />
+                    <label class="form-checkbox-label" for="non-music"
+                        >Non music</label
+                    >
+                </div>
+            </section>
+
+            <section class="form-grid-lyrics">
+                <label class="form-small-label" for="lyrics">Lyrics</label>
+                <textarea
+                    class="form-input-textarea"
+                    id="lyrics"
+                    placeholder="Lyrics"
+                ></textarea>
+            </section>
+
+            <h2 class="form-subtitle form-grid-additional-subtitle">
+                Additional info
+            </h2>
+
+            <section class="form-grid-author-additional-info">
+                <label class="form-small-label" for="featuring"
+                    >Featuring</label
+                >
+                <input
+                    class="form-input-text"
+                    type="text"
+                    id="featuring"
+                    placeholder="Featuring"
+                />
+
+                <label class="form-small-label" for="produced-by"
+                    >Produced by</label
+                >
+                <input
+                    class="form-input-text"
+                    type="text"
+                    id="produced-by"
+                    placeholder="Produced by"
+                />
+
+                <label class="form-small-label" for="written-by"
+                    >Written by</label
+                >
+                <input
+                    class="form-input-text"
+                    type="text"
+                    id="written-by"
+                    placeholder="Written by"
+                />
+
+                <h3 class="form-subsubtitle">Video and audio links</h3>
+
+                <label class="form-small-label" for="youtube-link"
+                    >YouTube link</label
+                >
+                <input
+                    class="form-input-text"
+                    type="url"
+                    id="youtube-link"
+                    name="youtube-link"
+                />
+
+                <label class="form-small-label" for="soundcloud-link"
+                    >SoundCloud link</label
+                >
+                <input
+                    class="form-input-text"
+                    type="url"
+                    id="soundcloud-link"
+                    name="soundcloud-link"
+                />
+            </section>
+
+            <section class="form-grid-album-additional-info">
+                <h3 class="form-subsubtitle">
+                    Release date, albums, additional tags
+                </h3>
+
+                <label class="form-small-label" for="release-date"
+                    >Release date</label
+                >
+                <input
+                    class="form-input-text"
+                    type="date"
+                    id="release-date"
+                    name="release-date"
+                />
+
+                <label class="form-small-label" for="album">Album</label>
+                <input
+                    class="form-input-text"
+                    type="search"
+                    id="album"
+                    name="album"
+                    placeholder="Search album"
+                />
+
+                <a class="slide-ref" data-slide-name="add-album">Add album</a>
+                
+            </section>
+        </div>
+        <input
+            id="submit-button"
+            class="form-submit-button form-grid-button"
+            type="submit"
+            value="Submit"
+        />
+    </form>
+</main>

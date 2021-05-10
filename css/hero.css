@@ -2,7 +2,6 @@
 
 .hero {
     height: 25em;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/album-example.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,19 +15,16 @@
     height: 100%;
     width: 65%;
     margin: auto;
+    animation: fadeIn ease-out 3s;
 
-    animation: fadeIn ease 3s;
 }
 
-@keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-}
 
 .hero-title-container {
     width: 100%;
     display: grid;
     grid-template-columns: 15em 1fr;
+
 }
 
 .hero-title-image {
@@ -74,4 +70,10 @@
     color: gray;  
     align-self: center;
     margin-left: 0.5em;
+    
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
 }

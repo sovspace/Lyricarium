@@ -9,21 +9,18 @@
             href="https://fonts.googleapis.com/css?family=Montserrat"
         />
         <link rel="stylesheet" href="css/main.css" />
-        <link rel="stylesheet" href="css/index.css" />
         <link rel="icon" type="image/svg" href="icons/favicon.svg" />
     </head>
 
     <body>
         <header>
             <nav class="nav">
-                <input
-                    class="search-input"
-                    type="search"
-                    placeholder="Find song, album, artist..."
-                />
-                <a href="#"> 
+                <input class="search-input" type="search" placeholder="Find song, album, artist..." />
+                
+                <a class="slide-ref" data-slide-name="home"> 
                     <h1 class="logo">Lyricarium</h1>
                 </a>
+                
                 <ul>
                     <li>
                         <button class="icon-button">
@@ -67,187 +64,25 @@
             <nav class="subnav">
                 <a href="#charts">Charts</a>
                 <a href="#community">Community</a>
-                <a href="add-song.html">Add song</a>
+                
+                <a class="slide-ref" data-slide-name="add-song">Add song</a>
+                
                 <a href="https://twitter.com">Twitter</a>
                 <a href="https://www.instagram.com">Instagram</a>
             </nav>
         </header>
-
-        <main class="container">
-            <section class="section">
-                <h2 class="section-title" id="charts">Charts</h2>
-                <h4 class="section-subtitle">Trending on Lyricarium</h4>
-
-                <div class="top">
-                    <a href="song.html">
-                        <article class="top-song">
-                            <span class="top-number">1</span>
-                            <img
-                                src="img/album-example.jpg"
-                                alt="Poker face album cover"
-                            />
-                            <h2 class="top-song-name">Страшно</h2>
-                            <h4 class="top-song-artist">Shorparis</h4>
-                            <span class="top-song-views">1.2M</span>
-                        </article>
-                    </a>
-
-                    <a href="song.html">
-                        <article class="top-song">
-                            <span class="top-number">2</span>
-                            <img
-                                src="img/album-example.jpg"
-                                alt="Poker face album cover"
-                            />
-                            <h2 class="top-song-name">Страшно</h2>
-                            <h4 class="top-song-artist">Shorparis</h4>
-                            <span class="top-song-views">1.2M</span>
-                        </article>
-                    </a>
-                    <a href="song.html">
-                        <article class="top-song">
-                            <span class="top-number">3</span>
-                            <img
-                                src="img/album-example.jpg"
-                                alt="Poker face album cover"
-                            />
-                            <h2 class="top-song-name">Страшно</h2>
-                            <h4 class="top-song-artist">Shorparis</h4>
-                            <span class="top-song-views">1.2M</span>
-                        </article>
-                    </a>
-
-                    <a href="song.html">
-                        <article class="top-song">
-                            <span class="top-number">4</span>
-                            <img
-                                src="img/album-example.jpg"
-                                alt="Poker face album cover"
-                            />
-                            <h2 class="top-song-name">Страшно</h2>
-                            <h4 class="top-song-artist">Shorparis</h4>
-                            <span class="top-song-views">1.2M</span>
-                        </article>
-                    </a>
-
-                    <a href="song.html">
-                        <article class="top-song">
-                            <span class="top-number">5</span>
-                            <img
-                                src="img/album-example.jpg"
-                                alt="Poker face album cover"
-                            />
-
-                            <h2 class="top-song-name">Страшно</h2>
-                            <h4 class="top-song-artist">Shorparis</h4>
-                            <span class="top-song-views">1.2M</span>
-                        </article>
-                    </a>
-                </div>
-            </section>
-
-            <section class="section">
-                <h2 class="section-title" id="community">Community</h2>
-                <h4 class="section-subtitle">
-                    Top community contributors maintain Lyricarium's lyrics
-                    database
-                </h4>
-
-                <div class="top">
-                    <a href="contributor.html">
-                        <article class="top-contributor">
-                            <span class="top-number">1</span>
-
-                            <figure class="top-contributor-avatar">
-                                <img
-                                    src="img/avatar-example.png"
-                                    alt="Contributer sovpace avatar"
-                                />
-                                <figcaption class="top-contributor-caption">
-                                    <h2 class="top-contributor-username">sovspace</h2>
-                                    <h4 class="top-contributor-status">Contibuter</h4>
-                                </figcaption>
-                            </figure>
-                        
-                            <span class="top-contributor-points">12 points</span>
-                        </article>
-                    </a>
-                    <a href="contributor.html">
-                        <article class="top-contributor">
-                            <span class="top-number">2</span>
-
-                            <figure class="top-contributor-avatar">
-                                <img
-                                    src="img/avatar-example.png"
-                                    alt="Contributer sovpace avatar"
-                                />
-                                <figcaption class="top-contributor-caption">
-                                    <h2 class="top-contributor-username">sovspace</h2>
-                                    <h4 class="top-contributor-status">Contibuter</h4>
-                                </figcaption>
-                            </figure>
-                            <span class="top-contributor-points">12 points</span>
-                        </article>
-                    </a>
-                    <a href="contributor.html">
-                        <article class="top-contributor">
-                            <span class="top-number">3</span>
-
-                            <figure class="top-contributor-avatar">
-                                <img
-                                    src="img/avatar-example.png"
-                                    alt="Contributer sovpace avatar"
-                                />
-                                <figcaption class="top-contributor-caption">
-                                    <h2 class="top-contributor-username">sovspace</h2>
-                                    <h4 class="top-contributor-status">Contibuter</h4>
-                                </figcaption>
-                            </figure>
-                            <span class="top-contributor-points">12 points</span>
-                        </article>
-                    </a>
-                    <a href="contributor.html">
-                        <article class="top-contributor">
-                            <span class="top-number">4</span>
-
-                            <figure class="top-contributor-avatar">
-                                <img
-                                    src="img/avatar-example.png"
-                                    alt="Contributer sovpace avatar"
-                                />
-                                <figcaption class="top-contributor-caption">
-                                    <h2 class="top-contributor-username">sovspace</h2>
-                                    <h4 class="top-contributor-status">Contibuter</h4>
-                                </figcaption>
-                            </figure>
-                            <span class="top-contributor-points">12 points</span>
-                        </article>
-                    </a>
-                    <a href="contributor.html">
-                        <article class="top-contributor">
-                            <span class="top-number">5</span>
-
-                            <figure class="top-contributor-avatar">
-                                <img
-                                    src="img/avatar-example.png"
-                                    alt="Contributer sovpace avatar"
-                                />
-                                <figcaption class="top-contributor-caption">
-                                    <h2 class="top-contributor-username">sovspace</h2>
-                                    <h4 class="top-contributor-status">Contibuter</h4>
-                                </figcaption>
-                            </figure>
-                            <span class="top-contributor-points">12 points</span>
-                        </article>
-                    </a>
-                </div>
-            </section>
-        </main>
         <footer>
             <h1>
                 Lyricarium is song and lyrics database maintained by community
                 of contributors
-            </h1>
+            </h1>       
         </footer>
+
+        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-storage.js"></script>
+
+        <script type="module" src="./js/main.js"></script>
     </body>
 </html>
